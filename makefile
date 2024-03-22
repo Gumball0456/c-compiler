@@ -1,11 +1,11 @@
 cppc: lex.o cppc.o
-	gcc -o cppc cppc.o lex.o
+	gcc -g -o cppc cppc.o lex.o
 
 cppc.o: cppc.c analex/lex.h
-	gcc -c cppc.c
+	gcc -g -c cppc.c
 
 lex.o: analex/lex.c analex/lex.h
-	gcc -c analex/lex.c
+	gcc -g -c analex/lex.c
 
 clean:
 	rm *.o cppc

@@ -20,11 +20,11 @@
 #define MINUS 15    // -
 #define MODULUS 16  // %
 #define DIV 17      // /
-// #define NUM 13      // number - decimals and integers
-// #define ID 14       // strings
+#define NUM 18      // number - decimals and integers
+#define ID 19       // strings
 
 extern int Line_number;
-extern int Size;
+extern int Lenght;
 extern char *Lexeme;
 
 int lex();

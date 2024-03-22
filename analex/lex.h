@@ -3,17 +3,23 @@
 * author: gumball
 */
 
-#define COLON 12    // :
-#define COMMA 2     // ,
-#define SEMI 3      // semicolon ;
-#define LRB 4       // left round braket (
-#define RRB 5       // right round bracket )
-#define LSB 6       // left square bracket [
-#define RSB 7       // left square bracket ]
-#define LCB 8       // left curly bracket {
-#define RCB 9       // right curly bracket }
-#define HASH 10     // hashtag #
-#define ASTERISK 11 // *
+#define EOI 0       // end of input
+#define COLON 2     // :
+#define DOT 3       // ,
+#define COMA 4      // ,
+#define SEMI 5      // semicolon ;
+#define LRB 6       // left round braket (
+#define RRB 7       // right round bracket )
+#define LSB 8       // left square bracket [
+#define RSB 9       // left square bracket ]
+#define LCB 10      // left curly bracket {
+#define RCB 11      // right curly bracket }
+#define HASH 12     // hashtag #
+#define TIMES 13    // *
+#define PLUS 14     // +
+#define MINUS 15    // -
+#define MODULUS 16  // %
+#define DIV 17      // /
 // #define NUM 13      // number - decimals and integers
 // #define ID 14       // strings
 

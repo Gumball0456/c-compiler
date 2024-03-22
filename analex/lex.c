@@ -59,6 +59,13 @@ int lex(){
                     while(isdigit(*current))
                         current++;
 
+                    if(isalnum(*current)){
+                        while(isalnum(*current))
+                        current++;
+                        Lenght = current - Lexeme;
+                        return ID;
+                    }
+
                     Lenght = current - Lexeme;
                     return NUM;
                 }else{

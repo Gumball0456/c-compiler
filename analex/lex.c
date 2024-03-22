@@ -55,7 +55,20 @@ int lex(){
             case ' ': break;
 
             default:
-                fprintf(stderr, "Ignoring invalid character <%c>\n", *current);
+                if(isdigit(*current)){
+                    while(isdigit(*current))
+                        current++;
+
+                    Lenght = current - Lexeme;
+                    return NUM;
+                }else{
+                    while(isalnum(*current))
+                        current++;
+
+                    Lenght = current - Lexeme;
+                    return ID;
+                }
+                break;
         }
     }
 }
